@@ -8,6 +8,7 @@ services:
       - "8000:8000"
     environment:
       - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
+      - API_URL=${API_URL}
     volumes:
-      - .:/app
+      - ./src:/app
     restart: always
