@@ -10,5 +10,5 @@ services:
       - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
       - API_URL=${API_URL}
     volumes:
-      - ./src:/app
+      - .:/app
     restart: always

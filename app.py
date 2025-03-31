@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import VirusTotal
+from src.routers import VirusTotal
 
 app = FastAPI()
 
