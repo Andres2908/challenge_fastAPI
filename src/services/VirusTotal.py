@@ -1,7 +1,9 @@
 from fastapi import APIRouter, File, HTTPException
 import requests
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 router = APIRouter()
 
 VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
