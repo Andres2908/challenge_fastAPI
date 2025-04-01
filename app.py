@@ -3,7 +3,7 @@ from src.routers import VirusTotal
 
 app = FastAPI()
 
-app.include_router(VirusTotal.router)
+app.include_router(VirusTotal.router, prefix="/virustotal")
 
 @app.get("/")
 def home():

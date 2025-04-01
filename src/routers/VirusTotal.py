@@ -9,7 +9,7 @@ async def upload_file(file: UploadFile = File(...)):
     return {"message": "Archivo enviado a VirusTotal", "data": result}
 
 
-@router.get("/upload")
+@router.get("/analysis")
 async def get_analysis(analysis_id: str):
     result = virusTotal_service.get_analysis_result(analysis_id)
     return {"message": "Resultado del análisis", "data": result}
