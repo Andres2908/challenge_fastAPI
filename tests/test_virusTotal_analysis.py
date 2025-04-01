@@ -7,7 +7,7 @@ def test_get_analysis_result():
 
     mock_response = MagicMock()
     mock_response.json.return_value = {"data": {"attributes": {"status": "completed"}}}
-    #mock_response.status_code = 200
+    mock_response.status_code = 200
 
     with patch("requests.get", return_value=mock_response):
         response = get_analysis_result(analysis_id)

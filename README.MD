@@ -27,10 +27,26 @@ To run the application locally:
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 ```
 
+
+```bash
+uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+```
+
+## Envs
+It considers that version 3 of virusTotal is being used, since v2 appears to be obsolete.
+
+https://www.virustotal.com/api/v3
+
+## Build docker
+
+```bash
+docker-compose up --build
+```
+
 ## Run Docker
 
 To run the application with Docker, use the following command:
 
 ```bash
-docker-compose up --build
+docker-compose start
 ```
