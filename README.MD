@@ -39,7 +39,7 @@ Build:
 docker-compose up --build
 ```
 
-docker-compose start
+Start the containers
 ```bash
 docker-compose start  
 ```
